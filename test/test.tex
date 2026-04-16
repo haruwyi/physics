@@ -1,0 +1,36 @@
+\documentclass[lualatex,ja=standard]{bxjsarticle}
+
+% --- パッケージ ---
+\usepackage{amsmath, amssymb} % 数式用
+\usepackage{physics}          % 物理用（\dd や \pdv が便利）
+\usepackage{graphicx}         % 画像用
+\usepackage{siunitx}          % 単位用（\qty{9.8}{m/s^2} など）
+\usepackage{booktabs}         % 綺麗な表用
+
+% --- タイトル情報 ---
+\title{実験題目：〇〇の測定}
+\author{氏名：〇〇 〇〇（学籍番号：XXXXXXX）}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{目的}
+本実験の目的は……
+
+\section{原理}
+ニュートンの運動方程式は以下のように表される。
+\begin{equation}
+    m \frac{\dd^2 \vb{r}}{\dd t^2} = \vb{F}
+\end{equation}
+
+\section{実験方法}
+図\ref{fig:setup}に示す装置を用いて……
+
+\section{結果・考察}
+実験データを表\ref{table:data}に示す。
+
+\section{結論}
+以上の結果より……
+
+\end{document}
