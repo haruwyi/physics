@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # 1. データの読み込み
 # csv を読み込む
-file_path = '/home/haruk/physics/He-Ne_LAZER_Experiment/00_raw_data/20260417_V_ref.csv'
+file_path = '/home/haruk/physics/He-Ne_LAZER_Experiment/00_raw_data/20260417_V_dark.csv'
 df = pd.read_csv(file_path)
 
 # 読み込んだデータの中身を確認（最初の数行を表示）
@@ -27,6 +27,6 @@ plt.title('Solar Cell Characteristics - Semi-log Plot')
 plt.grid(True, which="both", ls="-", alpha=0.5)
 plt.legend()
 
-plt.savefig("/home/haruk/physics/He-Ne_LAZER_Experiment/00_raw_data/V_ref.png") # PNG形式で保存
+plt.savefig("/home/haruk/physics/He-Ne_LAZER_Experiment/03_outputs/V_dark.png") # PNG形式で保存
 
 plt.show()

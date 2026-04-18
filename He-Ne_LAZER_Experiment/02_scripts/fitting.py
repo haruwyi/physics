@@ -43,7 +43,7 @@ plt.ylabel('Photovoltaic Output $V$ (V)')
 plt.title('Fitting of Solar Cell Characteristics')
 plt.grid(True, which="both", ls="-", alpha=0.3)
 plt.legend()
-plt.savefig('/home/haruk/physics/He-Ne_LAZER_Experiment/00_raw_data/fitting.png')
+plt.savefig('/home/haruk/physics/He-Ne_LAZER_Experiment/03_outputs/fitting.png')
 plt.show()
 
 # 5. パラメータをテーブルで表示

@@ -27,6 +27,6 @@ plt.title('Solar Cell Characteristics - Semi-log Plot')
 plt.grid(True, which="both", ls="-", alpha=0.5)
 plt.legend()
 
-plt.savefig("/home/haruk/physics/He-Ne_LAZER_Experiment/00_raw_data/V_tilted.png") # PNG形式で保存
+plt.savefig("/home/haruk/physics/He-Ne_LAZER_Experiment/03_outputs/V_tilted.png") # PNG形式で保存
 
 plt.show()

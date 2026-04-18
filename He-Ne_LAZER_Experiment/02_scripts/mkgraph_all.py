@@ -26,5 +26,5 @@ plt.grid(True, which="both", ls="-", alpha=0.5)
 plt.legend() # 凡例を表示
 
 # 保存と表示
-plt.savefig('/home/haruk/physics/He-Ne_LAZER_Experiment/00_raw_data/comparison_plot.png')
+plt.savefig('/home/haruk/physics/He-Ne_LAZER_Experiment/03_outputs/comparison_plot.png')
 plt.show()
