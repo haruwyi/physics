@@ -14,11 +14,11 @@ results = []
 
 # 2. グラフの設定
 plt.figure(figsize=(10, 7))
-colors = {'V_ref': 'blue', 'V_tilted': 'orange', 'V_dark': 'green'}
-labels = {'V_ref': 'Reference', 'V_tilted': 'Tilted', 'V_dark': 'Reduced BG'}
+colors = {'V_ref': 'blue', 'V_tilted': 'orange', 'V_dark': 'green', 'V_dark_re':'red'}
+labels = {'V_ref': 'Reference', 'V_tilted': 'Tilted', 'V_dark': 'Reduced BG', 'V_dark_re': 'Re:Reduced BG'}
 
 # 3. 各カラムに対してループ処理
-for col in ['V_ref', 'V_tilted', 'V_dark']:
+for col in ['V_ref', 'V_tilted', 'V_dark', 'V_dark_re']:
     y = df[col]
     
     # 最小二乗法による1次式フィッティング: V = a*log10(I) + b
@@ -43,7 +43,7 @@ plt.ylabel('Photovoltaic Output $V$ (V)')
 plt.title('Fitting of Solar Cell Characteristics')
 plt.grid(True, which="both", ls="-", alpha=0.3)
 plt.legend()
-plt.savefig('/home/haruk/physics/He-Ne_LAZER_Experiment/03_outputs/fitting.png')
+plt.savefig('/home/haruk/physics/He-Ne_LAZER_Experiment/03_outputs/fitting_re.png')
 plt.show()
 
 # 5. パラメータをテーブルで表示
